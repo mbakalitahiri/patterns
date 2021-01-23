@@ -1,7 +1,6 @@
 <?php
 
 abstract class AbstractMembershipCustomerFactory {
-    //abstract function create($firstName, $lastName, $email);
     abstract function notify();
     abstract function setType();
     abstract function getType();
@@ -52,7 +51,8 @@ class ShortMembershipCustomer extends  AbstractMembershipCustomerFactory {
     }
     public function notify()
     {
-        // TODO: Implement notify() method.
+        // notify by email
+        mail($this->email,"Welcome to Fintech","Hi, dear member");
     }
 }
 
