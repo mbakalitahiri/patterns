@@ -11,37 +11,6 @@ class ShortMembershipCustomer extends  AbstractMembershipCustomerFactory {
     private $firstname;
     private $lastname;
     private $email;
-    /**
-     * @return mixed
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFirstname()
-    {
-        return $this->firstname;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLastname()
-    {
-        return $this->lastname;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
 
     public function __construct($firstName, $lastName, $email)
     {
@@ -51,6 +20,31 @@ class ShortMembershipCustomer extends  AbstractMembershipCustomerFactory {
         $this->setType =  $this->setType();
 
     }
+
+    public function getType()
+    {
+        return $this->type;
+    }
+
+
+    public function getFirstname()
+    {
+        return $this->firstname;
+    }
+
+
+    public function getLastname()
+    {
+        return $this->lastname;
+    }
+
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+
 
     public function setType()
     {
@@ -67,37 +61,6 @@ class AnualMembershipCustomer extends  AbstractMembershipCustomerFactory {
     private $firstname;
     private $lastname;
     private $email;
-    /**
-     * @return mixed
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFirstname()
-    {
-        return $this->firstname;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLastname()
-    {
-        return $this->lastname;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
 
     public function __construct($firstName, $lastName, $email)
     {
@@ -106,6 +69,31 @@ class AnualMembershipCustomer extends  AbstractMembershipCustomerFactory {
         $this->email = $email;
         $this->setType =  $this->setType();
     }
+
+
+    public function getType()
+    {
+        return $this->type;
+    }
+
+
+    public function getFirstname()
+    {
+        return $this->firstname;
+    }
+
+
+    public function getLastname()
+    {
+        return $this->lastname;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+
 
     public function setType()
     {
