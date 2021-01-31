@@ -1,7 +1,8 @@
 <?php
+namespace Myapp;
+ require_once("./interfaces/Car.php");
 
-require_once ("Car.php");
-class FordFiesta implements Car
+class FordFiesta implements \MyApp\Interfaces\Car
 {
     function    __construct(){
         echo "Se ha crado un nuevo vehiculo Ford, modelo fiesta";

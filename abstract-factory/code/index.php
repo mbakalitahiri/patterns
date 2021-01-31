@@ -1,8 +1,13 @@
 <?php
+
+namespace Myapp;
+use MyApp\AssemblyLine\FordAssemblyLine;
+use MyApp\Interfaces\AssemblyLineInterface;
+require_once("./classes/FordAssemblyLine.php");
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-use pruebas;
 
 
 
@@ -10,7 +15,7 @@ use pruebas;
 class Index
 {
   public $assemblyLineInterface;
-  function __construct(_AssemblyLineInterface $assemblyLineInterface){
+  function __construct(\MyApp\Interfaces\AssemblyLineInterface $assemblyLineInterface){
     $this->assemblyLineInterface = $assemblyLineInterface;
   }
 
@@ -26,6 +31,7 @@ class Index
 }
 
 
-$factory = new  pruebas\FordAssemblyLine();
+$factory = new   FordAssemblyLine();
 $index = new Index($factory);
-$index->createCar();
+$index->createTruck();
+

@@ -1,9 +1,10 @@
 <?php
+namespace MyApp\AssemblyLine;
 
-require_once("ChevyMalibu.php");
-require_once("ChevySilverado.php");
 
-class ChevyAssemblyLine implements _AssemblyLineInterface
+use MyApp\Interfaces\AssemblyLineInterface;
+
+class ChevyAssemblyLine implements AssemblyLineInterface
 {
 
     function createCar()

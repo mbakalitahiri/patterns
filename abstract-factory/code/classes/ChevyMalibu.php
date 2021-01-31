@@ -1,7 +1,5 @@
 <?php
-namespace pruebas ;
-
-class ChevyMalibu implements Car
+ class ChevyMalibu implements Car
 {
 
     function __construct(){

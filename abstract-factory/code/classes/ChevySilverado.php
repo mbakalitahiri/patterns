@@ -1,10 +1,5 @@
 <?php
-
-/**
- * class ChevySilverado
- * 
- */
-class ChevySilverado implements Truck
+ class ChevySilverado implements Truck
 {
 
     function __construct(){

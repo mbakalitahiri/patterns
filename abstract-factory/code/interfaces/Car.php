@@ -1,6 +1,6 @@
 <?php
 
-namespace pruebas ;
+namespace MyApp\Interfaces;
 
 
 interface Car
